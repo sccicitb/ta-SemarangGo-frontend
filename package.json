@@ -1,0 +1,37 @@
+{
+  "name": "public-platform",
+  "description": "Public platform dashbord for Semarang Smart City",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.23.2",
+    "axios": "^0.27.2",
+    "qs": "^6.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.1",
+    "recoil": "^0.7.5",
+    "swr": "^1.3.0",
+    "vitest": "^0.23.4"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.9.7",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "less": "^4.1.3",
+    "less-vars-to-js": "^1.3.0",
+    "prettier": "2.7.1",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.3",
+    "vite-plugin-imp": "^2.3.0",
+    "vite-plugin-inspect": "^0.7.3"
+  }
+}
