@@ -7,6 +7,7 @@ import Inspect from "vite-plugin-inspect";
 import { resolve } from "path";
 import fs from "fs";
 import path from "path";
+import postcssModulesValues from "postcss-modules-values";
 
 const themeVariables = lessToJS(
   fs.readFileSync(resolve("./src/variables/theme-variable.less"), "utf8")
@@ -43,6 +44,14 @@ export default ({ mode }) => {
       ]
     },
     css: {
+      modules: {
+        localsConvention: 'dashes',
+      },
+      postcss: {
+        plugins: [
+          postcssModulesValues
+        ],
+      },
       preprocessorOptions: {
         less: {
           javascriptEnabled: true,
