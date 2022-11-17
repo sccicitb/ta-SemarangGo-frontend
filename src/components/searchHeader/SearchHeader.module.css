@@ -1,0 +1,21 @@
+@import "../../variables/theme-variable.css";
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin: 0px auto;
+  padding: 20px; 
+  height: 73px;
+
+  background: var(--clr-mono-white);
+}
+
+.logo {
+  width: auto;
+  height: 32px;
+  margin-right: 20px;
+}

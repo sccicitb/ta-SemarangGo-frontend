@@ -1,0 +1,78 @@
+@import "../../variables/theme-variable.css";
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+
+  width: 94%;
+  height: 33px;
+
+  border: 0.5px solid var(--clr-mono-dark-grey);
+  border-radius: 8px;
+
+  /* flex: none;
+  order: 1;
+  flex-grow: 1; */
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.searchInputs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.search input {
+  background-color: var(--clr-mono-white);
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  width: 100%;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  letter-spacing: -0.006em;
+
+  color: var(--clr-mono-black);
+}
+
+.search input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  letter-spacing: -0.006em;
+
+  color: var(--clr-mono-dark-grey);
+}
+
+.searchIcon {
+  display: flex;
+  color: var(--clr-mono-dark-grey);
+  place-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 20px;
+}
+
+#clearBtn {
+  cursor: pointer;
+}

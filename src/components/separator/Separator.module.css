@@ -1,0 +1,15 @@
+@import "../../variables/theme-variable.css";
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.separator {
+  margin: 0px -1rem;
+  border-top: 10px solid rgb(247, 247, 247);
+}
