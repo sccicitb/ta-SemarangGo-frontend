@@ -1,0 +1,47 @@
+@import "../../variables/theme-variable.css";
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 100%;
+  height: 50px;
+}
+
+.iconBackGround {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+
+  width: 32px;
+  height: 32px;
+
+  background: var(--clr-primary-light-red);
+  border-radius: 8px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  color: var(--clr-primary-red-main);
+}
+
+.serviceName {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+
+  color: var(--clr-mono-black);
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+}
