@@ -11,5 +11,5 @@ hr {
 
 .separator {
   margin: 0px -1rem;
-  border-top: 10px solid rgb(247, 247, 247);
+  border-top: 10px solid var(--clr-mono-background);
 }

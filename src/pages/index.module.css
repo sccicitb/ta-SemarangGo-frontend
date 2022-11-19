@@ -7,3 +7,15 @@
   z-index: 11;
 }
 
+.mainWrapper {
+  background-color: var(--clr-mono-white);
+  position: relative;
+  max-width: 640px;
+  width: 100%;
+  margin: 0px auto;
+  box-sizing: border-box;
+  top: 73px;
+  padding: 0px 16px 80px;
+  min-height: calc(100vh - 73px);
+}
+

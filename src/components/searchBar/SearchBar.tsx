@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
-import { RecoilBridge, useRecoilState, useSetRecoilState } from "recoil";
+import React, { useState, useRef } from "react";
 
 import { AiOutlineSearch as SearchIcon } from "react-icons/ai";
 import { GrFormClose as CloseIcon } from "react-icons/gr";
