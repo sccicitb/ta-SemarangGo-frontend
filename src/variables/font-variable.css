@@ -1,0 +1,22 @@
+:root {
+  --font-family: 'Raleway', sans-serif;
+  --font-family2: 'Montserrat', sans-serif;
+
+  /* XS Breakpoint */
+  --font-xs-h1-weight: 400;
+  --font-xs-h1-size: 16px;
+  --font-xs-h2-weight: 400;
+  --font-xs-h2-size: 16px;
+  --font-xs-h3-weight: 400;
+  --font-xs-h3-size: 16px;
+  --font-xs-body-weight: 400;
+  --font-xs-body-size: 16px;
+  --font-xs-sub-weight: 400;
+  --font-xs-sub-size: 16px;
+
+  /* XS Breakpoint */
+  --font-xs-weight: 400;
+  --font-xs-size: 16px;
+
+
+}

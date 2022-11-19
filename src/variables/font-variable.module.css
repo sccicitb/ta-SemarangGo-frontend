@@ -1,3 +1,5 @@
+@import "./theme-variable.css";
+
 h1 {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -5,7 +7,7 @@ h1 {
   font-size: 32px;
   line-height: 120%;
 
-  color: #000000;
+  color: var(--clr-mono-black);
 }
 
 h2 {
@@ -15,7 +17,7 @@ h2 {
   font-size: 24px;
   line-height: 120%;
 
-  color: #000000;
+  color: var(--clr-mono-black);
 }
 
 h3 {
@@ -25,7 +27,7 @@ h3 {
   font-size: 16px;
   line-height: 120%;
 
-  color: #000000;
+  color: var(--clr-mono-black);
 }
 
 .navbar-title {
@@ -35,7 +37,7 @@ h3 {
   font-size: 20px;
   line-height: 120%;
 
-  color: #000000;
+  color: var(--clr-mono-black);
 }
 
 body .regular {
@@ -45,7 +47,7 @@ body .regular {
   font-size: 14px;
   line-height: 120%;
 
-  color: #000000;
+  color: var(--clr-mono-black);
 }
 
 body .bold {
@@ -55,7 +57,7 @@ body .bold {
   font-size: 14px;
   line-height: 120%;
 
-  color: #000000;
+  color: var(--clr-mono-black);
 }
 
 body .italic {
@@ -65,7 +67,7 @@ body .italic {
   font-size: 14px;
   line-height: 120%;
 
-  color: #000000;
+  color: var(--clr-mono-black);
 }
 
 .subRegular {
@@ -75,7 +77,7 @@ body .italic {
   font-size: 12px;
   line-height: 120%;
 
-  color: #000000;
+  color: var(--clr-mono-black);
 }
 
 .subBold {
@@ -85,7 +87,7 @@ body .italic {
   font-size: 12px;
   line-height: 120%;
   
-  color: #000000;
+  color: var(--clr-mono-black);
 }
 
 .subItalic {
@@ -95,5 +97,5 @@ body .italic {
   font-size: 12px;
   line-height: 120%;
   
-  color: #000000;
+  color: var(--clr-mono-black);
 }
