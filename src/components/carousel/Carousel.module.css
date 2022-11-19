@@ -1,0 +1,31 @@
+@import "../../variables/theme-variable.css";
+
+.carouselContainer {
+  display: flex;
+  padding: 20px 0px;
+
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin: 2px 8px;
+  border-radius: 50%;
+  border: 1px solid var(--clr-primary-red-main);
+}
+
+.indicatorSelected {
+  background: var(--clr-primary-red-main);
+}
+
+.alice-carousel__dots {
+  margin: 16px 3px 0px!important;
+}
