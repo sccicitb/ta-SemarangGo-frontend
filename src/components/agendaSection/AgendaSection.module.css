@@ -1,0 +1,53 @@
+@import "../../variables/font-variable.module.css";
+
+.agendaSection {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+
+  width: 100%;
+  min-height: 100px;
+
+  background: var(--clr-mono-white);
+}
+
+.titleCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  margin-bottom: 20px;
+}
+
+.title {
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+}
+
+.viewAllButton {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+
+  letter-spacing: -0.006em;
+
+  border: none;
+  color: var(--clr-primary-red-main);
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  row-gap: 20px;
+}

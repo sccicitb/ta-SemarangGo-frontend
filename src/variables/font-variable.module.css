@@ -6,8 +6,6 @@ h1 {
   font-weight: 600;
   font-size: 32px;
   line-height: 120%;
-
-  color: var(--clr-mono-black);
 }
 
 h2 {
@@ -16,8 +14,6 @@ h2 {
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
-
-  color: var(--clr-mono-black);
 }
 
 h3 {
@@ -26,8 +22,6 @@ h3 {
   font-weight: 600;
   font-size: 16px;
   line-height: 120%;
-
-  color: var(--clr-mono-black);
 }
 
 .navbar-title {
@@ -36,8 +30,6 @@ h3 {
   font-weight: 600;
   font-size: 20px;
   line-height: 120%;
-
-  color: var(--clr-mono-black);
 }
 
 body .regular {
@@ -46,8 +38,6 @@ body .regular {
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
-
-  color: var(--clr-mono-black);
 }
 
 body .bold {
@@ -56,8 +46,6 @@ body .bold {
   font-weight: 600;
   font-size: 14px;
   line-height: 120%;
-
-  color: var(--clr-mono-black);
 }
 
 body .italic {
@@ -66,8 +54,6 @@ body .italic {
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
-
-  color: var(--clr-mono-black);
 }
 
 .subRegular {
@@ -76,8 +62,6 @@ body .italic {
   font-weight: 400;
   font-size: 12px;
   line-height: 120%;
-
-  color: var(--clr-mono-black);
 }
 
 .subBold {
@@ -86,8 +70,6 @@ body .italic {
   font-weight: 600;
   font-size: 12px;
   line-height: 120%;
-  
-  color: var(--clr-mono-black);
 }
 
 .subItalic {
@@ -96,6 +78,30 @@ body .italic {
   font-weight: 400;
   font-size: 12px;
   line-height: 120%;
-  
-  color: var(--clr-mono-black);
+}
+
+.tag {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 120%;
+}
+
+.agendaTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -0.006em;
+}
+
+.agendaContent{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: -0.006em;
 }

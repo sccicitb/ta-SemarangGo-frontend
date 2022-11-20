@@ -4,6 +4,7 @@
   --clr-primary-red-alt:       #930D20;
   --clr-primary-darker-grey:   #5B5757;
   --clr-primary-light-red:     #FFF2F2;
+  --clr-primary-green:         #29B974;
 
   /* Mono */
   --clr-mono-black:         #2C2C2C;
@@ -11,4 +12,6 @@
   --clr-mono-light-grey:    #F2F2F2;
   --clr-mono-white:         #FAFAFA;
   --clr-mono-background:    #E5E5E5;
+  --clr-mono-grey:          #E2E2E2;
+  --clr-mono-grey-alt:      #CDCDCD;
 }
