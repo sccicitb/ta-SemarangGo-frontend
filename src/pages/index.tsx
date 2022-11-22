@@ -4,17 +4,18 @@ import { useRecoilValue } from "recoil";
 
 import styles from "./index.module.css";
 import appStyles from "./_app.module.css";
+import { NewsCardTypes } from "@/models/newsCard";
+import { AgendaCardTypes } from "@/models/agendaCard";
 
 import SearchHeader from "@/components/searchHeader/SearchHeader";
 import Separator from "@/components/separator/Separator";
 import PopularServiceSection from "@/components/popularServiceSection/PopularServiceSection";
 import Carousel from "@/components/carousel/Carousel";
 import SmartCityAnalysisSection from "@/components/smartCityAnalysisSection/SmartCityAnalysisSection";
-import { NewsCardTypes } from "@/models/newsCard";
 import NewsSection from "@/components/newsSection/NewsSection";
-import { AgendaCardTypes } from "@/models/agendaCard";
 import AgendaSection from "@/components/agendaSection/AgendaSection";
 import SemarangGoSection from "@/components/semarangGoSection/SemarangGoSection";
+import NavBar from "@/components/navBar/NavBar";
 
 const newsData: NewsCardTypes.NewsCard[] = [
   {
@@ -72,7 +73,9 @@ function HomePage() {
         />
         <Separator />
         <SemarangGoSection />
+        <Separator />
       </main>
+      <NavBar />
     </div>
   );
 }
