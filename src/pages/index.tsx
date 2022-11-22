@@ -11,10 +11,10 @@ import PopularServiceSection from "@/components/popularServiceSection/PopularSer
 import Carousel from "@/components/carousel/Carousel";
 import SmartCityAnalysisSection from "@/components/smartCityAnalysisSection/SmartCityAnalysisSection";
 import { NewsCardTypes } from "@/models/newsCard";
-import NewsCard from "@/components/newsCard/NewsCard";
 import NewsSection from "@/components/newsSection/NewsSection";
 import { AgendaCardTypes } from "@/models/agendaCard";
 import AgendaSection from "@/components/agendaSection/AgendaSection";
+import SemarangGoSection from "@/components/semarangGoSection/SemarangGoSection";
 
 const newsData: NewsCardTypes.NewsCard[] = [
   {
@@ -71,6 +71,7 @@ function HomePage() {
           data={agendaData}          
         />
         <Separator />
+        <SemarangGoSection />
       </main>
     </div>
   );

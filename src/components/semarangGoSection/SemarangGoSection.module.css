@@ -1,0 +1,58 @@
+@import "../../variables/font-variable.module.css";
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 40px 0px;
+  row-gap: 20px;
+
+  width: 100%;
+
+  background: var(--clr-mono-white);
+}
+
+.titleText {
+  color: var(--clr-primary-red-main);
+  white-space: normal;
+  margin: 0px;
+}
+
+.buttonWrapper {
+  width: 100%;
+  height: auto;
+}
+
+.contentText {
+  margin: 0px;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  column-gap: 4px;
+  color: var(--clr-primary-red-main);
+
+  background-color: var(--clr-mono-white);
+  border: 1px solid var(--clr-primary-red-main);
+  border-radius: 8px;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.iconWrapper {
+  width: 24px;
+  height: 24px;
+  align-items: center;
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+}
