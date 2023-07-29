@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.page-wrapper {
+	background-color: $color-mono-grey;
+	position: relative;
+	max-width: inherit;
+	width: 100%;
+	margin: 0px auto;
+	height: calc(100vh - $header-height);
+	overflow: hidden;
+	// fixed
+	// top: $header-height;
+
+	// sticky (none att)
+	// iframe {
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	border: none;
+	// 	overflow: scroll;
+	// 	// -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+	// 	// scrollbar-width: none; /* Hide scrollbar in Firefox */
+
+	// 	// &::-webkit-scrollbar {
+	// 	// 	display: none;
+	// 	// }
+	// }
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
+		overflow-y: scroll;
+		scrollbar-width: none; /* hide scrollbar for Firefox */
+		-ms-overflow-style: none; /* hide scrollbar for IE and Edge */
+
+		&::-webkit-scrollbar {
+			display: none; /* hide scrollbar for Chrome and Safari */
+		}
+	}
+}

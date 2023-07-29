@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.smart-city-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+
+	width: 100%;
+	min-height: 100px;
+
+	background: $color-mono-white;
+
+	h3 {
+		@include heading-3;
+		color: $color-mono-black;
+		text-align: left;
+		text-decoration: none;
+		display: inline-block;
+		margin: 0px 0px 20px;
+	}
+
+	.grid {
+		display: grid;
+		row-gap: 20px;
+	}
+}

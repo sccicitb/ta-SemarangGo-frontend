@@ -1,0 +1,45 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.service-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.25em;
+	gap: 1.25em;
+	background: $color-mono-white;
+
+	width: 100%;
+	min-height: 100%;
+
+	.title-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 0.25em;
+
+		h3 {
+			@include heading-3;
+			color: $color-mono-black;
+			margin: 0;
+		}
+
+		.total-service {
+			@include font-sm-regular;
+			color: $color-mono-black;
+		}
+
+		b {
+			@include font-sm-extra-bold;
+			color: $color-primary-red-main;
+			margin: 0;
+		}
+	}
+
+	.pagination {
+		justify-content: center;
+		width: 100%;
+		margin: 0;
+	}
+}

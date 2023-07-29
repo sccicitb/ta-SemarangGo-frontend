@@ -1,0 +1,54 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.page-wrapper {
+	background-color: $color-mono-background;
+	position: relative;
+	max-width: inherit;
+	width: 100%;
+	margin: 0px auto;
+	height: fit-content;
+	// fixed
+	// top: $header-height;
+	padding-bottom: $navbar-height;
+
+	// sticky (none att)
+}
+
+.agenda-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.25em;
+	gap: 1.25em;
+	background: $color-mono-white;
+	min-height: calc(100vh - $navbar-height - $header-height - 10px);
+
+	.card-wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		row-gap: 1.25em;
+		height: 100%;
+	}
+
+	.not-found-wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		row-gap: 1.25em;
+		height: 40vh;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			height: 160px;
+			width: auto;
+		}
+
+		span {
+			@include font-md-bold;
+			color: $color-mono-black;
+		}
+	}
+}

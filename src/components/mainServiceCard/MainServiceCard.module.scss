@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.service-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0.625em;
+	gap: 0.25em;
+
+	width: 100%;
+	height: auto;
+	background: $color-mono-white;
+
+	border: 1px solid $color-mono-dark-grey;
+	border-radius: 8px;
+
+	svg {
+		width: 24px;
+		height: 24px;
+		fill: $color-primary-red-main;
+	}
+
+	span {
+		@include font-sm-bold;
+		color: $color-mono-black;
+		margin: 0;
+	}
+
+	p {
+		@include font-sm-regular;
+		color: $color-mono-black;
+		margin: 0;
+		justify-content: left;
+		text-align: start;
+
+		vertical-align: middle;
+		align-items: center;
+
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-decoration: none;
+	}
+}

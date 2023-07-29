@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.snackbar {
+	z-index: $z-index-snackbar;
+	max-width: $screen-max;
+	width: 100%;
+	position: fixed;
+	transition: top 400ms ease 0s, bottom 400ms ease 0s, margin-top 300ms ease 0s,
+		margin-bottom 300ms ease 0s, opacity 150ms ease 150ms;
+
+	> .container {
+		height: 45px;
+		padding: 9px 20px 10px 20px;
+		background-color: $color-mono-black;
+		box-shadow: 0 3px 3px rgb(0 0 0 / 10%), 0 3px 3px rgb(0 0 0 / 5%);
+		display: flex;
+		justify-content: space-between;
+
+		align-items: center;
+		gap: 10px;
+		transition: all 150ms ease-in-out;
+		> .icon {
+			width: 20px;
+			height: 20px;
+			margin-left: -3px;
+			margin-right: -2px;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: none;
+		}
+		> .message {
+			@include font-sm-regular;
+			color: $color-mono-white;
+			margin: 0;
+			font-size: 0.9375rem;
+			line-height: 0.9375rem;
+		}
+		> .actionButton {
+			height: 36px;
+			width: 36px;
+			padding: 5px 3px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			cursor: pointer;
+
+			svg {
+				width: 100%;
+				height: 100%;
+				fill: $color-mono-white;
+			}
+		}
+	}
+}
+
+.snackbar.show {
+	top: $header-height;
+}
+
+.top-center {
+	left: 50%;
+	top: -$header-height;
+	transform: translate(-50%, 0);
+}

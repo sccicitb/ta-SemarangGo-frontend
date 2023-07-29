@@ -1,0 +1,24 @@
+{
+  "tabWidth": 2,
+  "useTabs": true,
+  "printWidth": 80,
+  "semi": false,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "endOfLine": "lf",
+  "bracketSpacing": true,
+  "overrides": [
+    {
+      "files": ".css",
+      "options": {
+        "semi": true
+      }
+    },
+    {
+      "files": ".scss",
+      "options": {
+        "semi": true
+      }
+    }
+  ]
+}

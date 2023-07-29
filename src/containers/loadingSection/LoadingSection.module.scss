@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.loading-spinner {
+	width: 80px;
+	height: 80px;
+	border: 6px solid $color-mono-dark-grey;
+	border-top: 6px solid $color-primary-red-main;
+	border-radius: 50%;
+	animation: spinner 1s linear infinite;
+}
+
+// .loading-spinner {
+// 	width: 80px;
+// 	height: 80px;
+// 	color: $color-primary-red-main;
+// }
+
+.loader-container {
+	width: 100%;
+	max-width: inherit;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	// background: rgba($color: $color-mono-white, $alpha: 0.8);
+	z-index: 12;
+}
+
+.spinner-container {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}

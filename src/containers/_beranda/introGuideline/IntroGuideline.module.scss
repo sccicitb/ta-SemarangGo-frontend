@@ -1,0 +1,88 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.title {
+	@include heading-3;
+	color: $color-mono-black;
+	margin: 0;
+}
+
+.content {
+	@include font-md-regular;
+	color: $color-mono-black;
+	margin: 0.5em;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.button {
+	@include font-md-bold;
+	margin: 0;
+}
+
+.skip-button {
+	@include font-md-bold;
+	margin: 0;
+	color: $color-mono-black;
+	background-color: $color-mono-white;
+	border-radius: 8px;
+	border: none;
+	padding: 0.5em;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.primary-button {
+	@include font-md-bold;
+	margin: 0;
+	color: $color-mono-white;
+	background-color: $color-primary-red-main;
+	border-radius: 8px;
+	border: none;
+	padding: 0.5em;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.back-button {
+	@include font-md-bold;
+	margin: 0;
+	color: $color-primary-red-main;
+	background-color: $color-mono-white;
+	border-radius: 8px;
+	border: none;
+	padding: 0.5em;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.back-next-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	gap: 0.5em;
+}
+
+.tooltip {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: $color-mono-white;
+	padding: 15px;
+	border-radius: 8px;
+	gap: 1em;
+	max-width: 100%;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}

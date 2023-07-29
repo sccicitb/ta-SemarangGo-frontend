@@ -1,0 +1,56 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.section-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 40px 20px;
+	row-gap: 20px;
+
+	width: 100%;
+
+	background: $color-mono-white;
+
+	h1 {
+		@include font($font-family, normal, 600, 32px, 120%);
+		color: $color-primary-red-main;
+		white-space: normal;
+		margin: 0px;
+	}
+
+	p {
+		@include font-md-regular;
+		margin: 0px;
+	}
+
+	.button-wrapper {
+		width: 100%;
+		height: auto;
+
+		.button {
+			display: flex;
+			width: 100%;
+			// flex-direction: row;
+			// justify-content: center;
+			// align-items: center;
+			// padding: 4px 8px;
+			// column-gap: 4px;
+			// @include font-md-regular-alt;
+			// color: $color-primary-red-main;
+
+			// background-color: $color-mono-white;
+			// border: 1px solid $color-primary-red-main;
+			// border-radius: 8px;
+
+			text-align: center;
+			text-decoration: none;
+
+			.icon {
+				width: 24px;
+				height: 24px;
+				align-items: center;
+			}
+		}
+	}
+}

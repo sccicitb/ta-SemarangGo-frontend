@@ -1,0 +1,77 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.pagination-container {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	gap: 0.5em;
+
+	.pagination-item {
+		@include font-2xl-medium;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 4px;
+		gap: 10px;
+		fill: $color-mono-black;
+		color: $color-mono-dark-grey;
+
+		width: 32px;
+		height: 32px;
+		background: $color-mono-white;
+		border-radius: 8px;
+
+		&:hover {
+			background-color: $color-primary-light-red;
+			cursor: pointer;
+		}
+
+		&.selected {
+			background-color: $color-primary-light-red;
+			color: $color-mono-black;
+		}
+	}
+
+	.arrow {
+		position: relative;
+		content: '';
+		display: inline-block;
+		width: 1.5em;
+		height: 1.5em;
+
+		&.prev {
+			margin-right: 0.5em;
+		}
+
+		&.next {
+			margin-left: 0.5em;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.disabled {
+		pointer-events: none;
+		fill: $color-mono-dark-grey;
+
+		&:hover {
+			background-color: transparent;
+			cursor: default;
+		}
+	}
+
+	.pagination-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,88 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+@import '../styles/fonts';
+
+.wrapper {
+	background-color: $color-mono-white;
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	min-height: calc(100vh - $header-height);
+	// fixed
+	// top: $header-height;
+	padding-bottom: $navbar-height;
+
+	// sticky (none att)
+}
+
+.section-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 40px;
+	padding: 20px;
+	background-color: $color-mono-white;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	z-index: 11;
+}
+
+.status-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	padding: 0px;
+	column-gap: 20px;
+}
+
+.status-text {
+	@include font($font-family, normal, 600, 96px, 100%);
+	color: $color-primary-red-main;
+}
+
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+}
+
+.title-text-1 {
+	@include font($font-family, normal, 700, 24px, 100%);
+	color: $color-mono-darker-grey;
+}
+
+.title-text-2 {
+	@include font($font-family, normal, 700, 36px, 100%);
+	color: $color-mono-black;
+}
+
+.message-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 20px;
+
+	img {
+		width: 200px;
+		height: auto;
+	}
+
+	span {
+		@include heading-3;
+		color: $color-mono-black;
+		text-align: center;
+
+		.link {
+			color: $color-primary-red-main;
+			text-decoration: none;
+		}
+	}
+}

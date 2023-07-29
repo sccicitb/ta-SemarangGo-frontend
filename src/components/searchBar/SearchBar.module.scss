@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.search {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 0.5em;
+	gap: 10px;
+
+	width: 100%;
+	height: 33px;
+
+	border: 0.5px solid $color-mono-dark-grey;
+	border-radius: 8px;
+	background-color: $color-mono-white;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	input {
+		background-color: $color-mono-white;
+		border: 0;
+		border-radius: 2px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		width: 100%;
+		@include font-md-regular-alt;
+		font-size: 16px;
+		color: $color-mono-black;
+		height: 100%;
+
+		&::placeholder {
+			@include font-md-regular-alt;
+			color: $color-mono-dark-grey;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.search-icon {
+		display: flex;
+		place-items: center;
+		width: 20px;
+		height: 20px;
+	}
+
+	svg {
+		fill: $color-mono-dark-grey;
+		width: 20px;
+		height: 20px;
+	}
+
+	#clear-button {
+		cursor: pointer;
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		border: none;
+		background: none;
+	}
+}

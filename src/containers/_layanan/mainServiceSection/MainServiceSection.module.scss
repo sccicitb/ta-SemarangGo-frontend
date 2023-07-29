@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.25em;
+	gap: 1.25em;
+	background: $color-mono-white;
+
+	width: 100%;
+	min-height: 100%;
+
+	h3 {
+		@include heading-3;
+		color: $color-mono-black;
+		margin: 0;
+	}
+
+	.content-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		row-gap: 0.625em;
+		column-gap: 0.625em;
+		width: 100%;
+	}
+}

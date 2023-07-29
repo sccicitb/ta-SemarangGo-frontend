@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.tab-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	.tab-holder {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.tab-slider {
+		// width: ${(props) => `${props.width}px`};
+		height: 2px;
+		background-color: $color-primary-red-main;
+		transition: 0.2s;
+		// transform: ${(props) => `translateX(${props.width * props.index}px)`};
+	}
+}
+
+.tab {
+	@include font-md-bold;
+	background-color: $color-mono-white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em;
+	gap: 0.5em;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	color: $color-mono-dark-grey;
+}
+
+.active-tab {
+	@include font-md-bold;
+	background-color: $color-mono-white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em;
+	gap: 0.5em;
+	width: 100%;
+	border: none;
+	cursor: default;
+	color: $color-primary-red-main;
+}

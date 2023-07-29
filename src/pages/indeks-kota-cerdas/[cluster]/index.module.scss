@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: $color-mono-background;
+	position: relative;
+	max-width: inherit;
+	width: 100%;
+	margin: 0px auto;
+	min-height: calc(100vh - $header-height);
+	// fixed
+	// top: $header-height;
+
+	// sticky (none att)
+}

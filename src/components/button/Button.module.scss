@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.button {
+	@include font-md-regular;
+	color: $color-mono-black;
+	background-color: $color-mono-light-grey;
+	// border: 1px solid $color-mono-darker-grey;
+	border: none;
+	fill: $color-mono-black;
+	border-radius: 8px;
+	position: relative;
+	display: inline-block;
+	width: fit-content;
+	height: fit-content;
+	cursor: pointer;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding: 0.25em 0;
+
+	&.disabled,
+	&:disabled,
+	&[disabled] {
+		cursor: default;
+		fill: $color-mono-dark-grey;
+		background-color: $color-mono-light-grey;
+	}
+
+	@media (hover: hover) {
+		&.hover,
+		&:hover:not([disabled]),
+		&[hover]:not([disabled]) {
+			background-color: $color-mono-dark-grey;
+		}
+	}
+
+	svg {
+		width: 2em;
+		height: 2em;
+	}
+}

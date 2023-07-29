@@ -1,0 +1,100 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.index-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 10px 8px;
+	gap: 8px;
+
+	width: 100%;
+	height: fit-content;
+	border: 1px solid $color-mono-dark-grey;
+	border-radius: 8px;
+	background: $color-mono-white;
+
+	.title {
+		@include font-md-bold;
+		color: $color-primary-red-main;
+		margin: 0px;
+
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: normal;
+	}
+
+	.index-wrapper {
+		display: flex;
+		justify-content: space-around;
+		padding: 0px;
+		width: 100%;
+
+		.index {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			gap: 8px;
+			width: 100%;
+			height: 100%;
+		}
+
+		.text-wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px;
+			gap: 2px;
+
+			.value-type {
+				@include font-sm-regular;
+				color: $color-mono-black;
+			}
+
+			.value {
+				@include font-sm-bold;
+				color: $color-mono-black;
+			}
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
+			fill: $color-primary-red-main;
+		}
+	}
+
+	.description {
+		@include font-sm-regular;
+		color: $color-mono-black;
+		margin: 0px;
+
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: normal;
+		text-decoration: none;
+	}
+}
+
+.tag {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em;
+	border-radius: 8px;
+	background: $color-mono-light-grey;
+
+	&-text {
+		@include font-sm-regular;
+		display: inline-block;
+		vertical-align: middle;
+		color: $color-mono-black;
+	}
+}

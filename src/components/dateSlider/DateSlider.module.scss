@@ -1,0 +1,161 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.date-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5em 0px;
+	gap: 0.25em;
+	width: 60px;
+	height: 60px;
+	background: $color-primary-light-red;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	color: $color-mono-dark-grey;
+
+	@media only screen and (min-width: $screen-sm) {
+		width: 80px;
+	}
+
+	&-active {
+		background: $color-primary-red-alt;
+		cursor: default;
+		color: $color-mono-white;
+	}
+
+	&:hover:not(&-active),
+	&[hover]:not(&-active) {
+		background-color: $color-mono-dark-grey;
+		color: $color-mono-white;
+	}
+
+	.date-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: inherit;
+		background-color: transparent;
+
+		.date {
+			@include font-sm-bold;
+		}
+
+		.day {
+			@include font-sm-regular;
+		}
+	}
+
+	.bullet {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: transparent;
+
+		&-displayed {
+			background: $color-primary-red-alt;
+		}
+
+		&-active {
+			background: $color-primary-yellow-main;
+		}
+	}
+}
+
+.selected-week {
+	@include font-md-bold;
+	color: $color-mono-black;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	cursor: pointer;
+}
+
+.date-component {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	gap: 1.25em;
+
+	.weekly-wrapper {
+		display: flex;
+		flex-direction: row;
+		width: 80%;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+
+		svg {
+			width: 24px;
+			height: 24px;
+			fill: $color-primary-red-main;
+			cursor: pointer;
+		}
+	}
+
+	.slider-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+
+		.button-wrapper {
+			position: absolute;
+			top: 20%;
+			left: -1em;
+			right: -1em;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.button {
+				z-index: 1;
+				transition: opacity 0.3s;
+				-webkit-transition: opacity 0.3s;
+			}
+		}
+	}
+
+	.content-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		padding-bottom: 1em;
+	}
+
+	.slider {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		// display: flex;
+		// flex-direction: row;
+		// justify-content: space-between;
+		// align-items: center;
+		// padding: 0.5em 0;
+		// width: 100%;
+
+		background: $color-primary-light-red;
+		border-radius: 8px;
+	}
+}
+
+.calendar {
+	@include font-md-regular;
+	display: block;
+	position: absolute;
+	z-index: 12;
+	top: calc($header-height - 1em);
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.hide {
+	display: none;
+}

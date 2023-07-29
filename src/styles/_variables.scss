@@ -1,0 +1,56 @@
+/* COLOR  
+============================================= */
+/* Primary */
+$color-primary-red-main: #da251d;
+$color-primary-yellow-main: #ffb800;
+$color-primary-red-alt: #930d20;
+$color-primary-light-red: #fff2f2;
+$color-primary-green: #099652;
+$color-primary-green-alt: #caffe6;
+
+/* Mono */
+$color-mono-black: #2c2c2c;
+$color-mono-darker-grey: #5b5757;
+$color-mono-dark-grey: #d4d4d4;
+$color-mono-light-grey: #f2f2f2;
+$color-mono-white: #fafafa;
+
+$color-mono-background: #e5e5e5;
+$color-mono-grey: #e2e2e2;
+$color-mono-grey-alt: #cdcdcd;
+
+/* SCREEN 
+============================================= */
+// Extra small devices (portrait phones, less than 576px)
+$screen-xs: 0;
+// Small devices (landscape phones, 576px and up)
+$screen-sm: 576px;
+// Medium devices (tablets, 768px and up)
+$screen-md: 768px;
+// Large devices (desktops, 992px and up)
+$screen-lg: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$screen-xl: 1200px;
+// Extra extra large devices (larger desktops, 1400px and up)
+$screen-xxl: 1400px;
+
+// Maximal screen width
+$screen-max: 640px;
+
+// Spacer
+$spacer-xs: 4px;
+$spacer-sm: 8px;
+$spacer-md: 12px;
+$spacer-lg: 17px;
+$spacer-xl: 28px;
+
+/* COMPONENT
+============================================= */
+$header-height: 75px;
+$navbar-height: 63px;
+
+/* Z-INDEX
+============================================= */
+$z-index-snackbar: 10;
+$z-index-navbar: 10;
+$z-index-header: 10;

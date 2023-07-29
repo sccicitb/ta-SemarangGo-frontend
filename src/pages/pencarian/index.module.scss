@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.wrapper {
+	background-color: $color-mono-white;
+	position: relative;
+	max-width: inherit;
+	width: 100%;
+	margin: 0px auto;
+	min-height: calc(100vh - $header-height);
+	// fixed
+	// top: $header-height;
+
+	// sticky (none att)
+	.search-header-section {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 1.25em 1.25em 0 1.25em;
+		gap: 1.25em;
+		background: $color-mono-white;
+
+		width: 100%;
+		min-height: 100%;
+	}
+}

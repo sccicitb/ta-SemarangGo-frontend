@@ -1,0 +1,182 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.tag {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	padding: 8px;
+	border-radius: 8px;
+
+	&-soon {
+		background: $color-mono-light-grey;
+		color: $color-mono-black;
+	}
+
+	&-on-going {
+		background: $color-primary-green-alt;
+		color: $color-primary-green;
+	}
+
+	&-finished {
+		background: $color-primary-light-red;
+		color: $color-primary-red-main;
+	}
+
+	&-text {
+		@include font-sm-regular;
+		display: inline-block;
+		vertical-align: middle;
+		color: inherit;
+	}
+}
+
+.agenda-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 10px;
+	row-gap: 8px;
+	cursor: pointer;
+	width: 100%;
+
+	border: 1px solid $color-mono-grey;
+	border-radius: 8px;
+	background: $color-mono-white;
+
+	.title {
+		@include font-md-bold;
+		color: $color-mono-black;
+		margin: 0px;
+		justify-content: left;
+		text-align: start;
+
+		vertical-align: middle;
+		align-items: center;
+
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-decoration: none;
+	}
+
+	.icon {
+		fill: $color-primary-red-main;
+		width: 16px;
+		height: 16px;
+		min-width: 16px;
+	}
+
+	.date-time-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		padding: 0px;
+		column-gap: 8px;
+
+		.date-time {
+			@include font-sm-regular;
+			color: $color-mono-black;
+			margin: 0px;
+
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			text-decoration: none;
+			display: inline-block;
+		}
+	}
+
+	.loc-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		padding: 0px;
+		column-gap: 8px;
+
+		.location {
+			@include font-sm-regular;
+			color: $color-mono-black;
+			margin: 0px;
+
+			vertical-align: middle;
+			align-items: center;
+
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-decoration: none;
+		}
+	}
+}
+
+.agenda-modal {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0 1.25em;
+	gap: 1.25em;
+	position: relative;
+
+	.title-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5em;
+	}
+
+	.title {
+		@include heading-3;
+		color: $color-mono-black;
+		margin: 0;
+		justify-content: left;
+		text-align: start;
+		vertical-align: middle;
+		align-items: center;
+		text-decoration: none;
+		white-space: normal;
+	}
+
+	.content-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		row-gap: 1.25em;
+		column-gap: 0.5em;
+		width: 100%;
+	}
+
+	.content-item {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 0.5em;
+
+		svg {
+			width: 24px;
+			height: 24px;
+			min-width: 24px;
+			fill: $color-primary-red-main;
+		}
+
+		.content-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			padding: 0px;
+			gap: 2px;
+
+			.attribute {
+				@include font-sm-regular;
+				color: $color-mono-darker-grey;
+			}
+			.value {
+				@include font-sm-bold;
+				color: $color-mono-black;
+			}
+		}
+	}
+}

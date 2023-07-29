@@ -1,0 +1,135 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.table-wrapper {
+	width: 100%;
+	background: $color-mono-white;
+	border: 1px solid $color-mono-dark-grey;
+	border-radius: 8px;
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 0 0.625em;
+
+	.head {
+		width: 100%;
+	}
+
+	.head-font {
+		@include font-md-extra-bold;
+		color: $color-mono-black;
+	}
+
+	.body-font {
+		@include font-md-regular;
+		color: $color-mono-black;
+		white-space: nowrap;
+	}
+
+	.dark-body-bg {
+		background: $color-mono-light-grey;
+	}
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.25em;
+	width: 100%;
+
+	.content-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.page-text {
+			@include font-md-regular;
+			color: $color-mono-black;
+			margin: 0 0.625em;
+			white-space: pre-wrap;
+			text-align: center;
+
+			b {
+				@include font-md-extra-bold;
+			}
+		}
+
+		.page-size-text {
+			@include font-md-regular;
+			color: $color-mono-black;
+			margin: 0 0.625em;
+			white-space: pre-wrap;
+			text-align: center;
+
+			select {
+				@include font-md-regular;
+				color: $color-mono-black;
+				appearance: none;
+				background-color: $color-mono-grey;
+				line-height: 1.2em;
+				padding: 0 0.2em;
+				border: 0.5px solid $color-mono-darker-grey;
+				border-radius: 0.25em;
+				margin: 0;
+				width: fit-content;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+
+	.arrow {
+		position: relative;
+		content: '';
+		display: inline-block;
+		width: fit-content;
+		height: fit-content;
+		fill: $color-mono-black;
+		border: none;
+		cursor: pointer;
+		background-color: transparent;
+		align-items: center;
+		display: flex;
+
+		&.prev {
+			margin-right: 0.5em;
+		}
+
+		&.next {
+			margin-left: 0.5em;
+		}
+
+		&.disabled,
+		&:disabled,
+		&[disabled] {
+			cursor: default;
+			fill: $color-mono-dark-grey;
+		}
+
+		svg {
+			width: 2em;
+			height: 2em;
+		}
+	}
+
+	.pagination-item {
+		width: 2.5em;
+		height: 2.5em;
+		border: 1px solid $color-mono-dark-grey;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0.3125em;
+		cursor: pointer;
+
+		&:hover {
+			background: $color-mono-light-grey;
+		}
+
+		&.active {
+			background: $color-mono-light-grey;
+		}
+	}
+}

@@ -1,0 +1,73 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.calendar {
+	@include font-md-regular;
+	width: 260px;
+	border-radius: 8px;
+	background-color: $color-mono-white;
+	align-items: center;
+
+	button {
+		border-radius: 8px;
+
+		// 	&:enabled:hover,
+		// 	&:enabled:focus {
+		// 		background-color: $color-primary-red-alt;
+		// 		color: $color-mono-white;
+		// 	}
+	}
+
+	span {
+		@include font-md-bold;
+	}
+
+	b {
+		@include font-md-bold;
+	}
+
+	.item {
+		@include font-md-regular;
+		border-radius: 8px;
+
+		&:focus {
+			background-color: $color-primary-red-alt;
+			color: $color-mono-white;
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				background-color: $color-primary-red-alt;
+				color: $color-mono-white;
+			}
+		}
+	}
+
+	.active-item,
+	.active-item:focus {
+		background-color: $color-primary-red-alt;
+		color: $color-mono-white;
+		border-radius: 8px;
+	}
+	@media (hover: hover) {
+		.active-item:hover {
+			background-color: $color-primary-red-alt;
+			color: $color-mono-white;
+			border-radius: 8px;
+		}
+	}
+
+	.arrow-icon {
+		fill: $color-primary-red-main;
+		cursor: pointer;
+		border: 8px;
+
+		&:hover {
+			fill: $color-primary-red-alt;
+		}
+	}
+}
+
+.hide {
+	display: none;
+}

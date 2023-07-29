@@ -1,0 +1,52 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.opd-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.25em;
+	gap: 1.25em;
+	background: $color-mono-white;
+
+	width: 100%;
+	min-height: 100%;
+
+	h3 {
+		@include heading-3;
+		color: $color-mono-black;
+		margin: 0;
+	}
+
+	p {
+		@include font-sm-regular;
+		color: $color-mono-black;
+		margin: 0;
+		width: 100%;
+		text-align: justify;
+	}
+
+	.content-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+		width: 100%;
+
+		.conten-item {
+			display: flex;
+			flex-direction: row;
+			gap: 0.5em;
+			width: 100%;
+
+			svg {
+				width: 16px;
+				height: 16px;
+				fill: $color-primary-red-main;
+			}
+		}
+	}
+
+	.button {
+		width: 100%;
+	}
+}

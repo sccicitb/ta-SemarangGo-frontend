@@ -1,0 +1,74 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.icon-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	height: 64px;
+	row-gap: 4px;
+
+	.icon-background {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 4px;
+
+		width: 44px;
+		height: 44px;
+
+		background: $color-primary-light-red;
+		border-radius: 8px;
+	}
+
+	.icon {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		color: $color-primary-red-alt;
+	}
+
+	.name {
+		@include font-sm-regular;
+		color: $color-mono-black;
+
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.service-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+
+	width: 100%;
+	min-height: 100px;
+
+	background: $color-mono-white;
+
+	h3 {
+		@include heading-3;
+		color: $color-mono-black;
+		text-align: left;
+		text-decoration: none;
+		display: inline-block;
+		margin: 0px 0px 20px;
+	}
+
+	.grid {
+		display: grid;
+		row-gap: 20px;
+	}
+}

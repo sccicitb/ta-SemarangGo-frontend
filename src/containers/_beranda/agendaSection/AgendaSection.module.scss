@@ -1,0 +1,71 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.agenda-section {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+
+	width: 100%;
+	min-height: 100px;
+
+	background: $color-mono-white;
+
+	.title-card {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px;
+
+		margin-bottom: 20px;
+	}
+
+	h3 {
+		@include heading-3;
+		color: $color-mono-black;
+		text-align: left;
+		text-decoration: none;
+		display: inline-block;
+		margin: 0;
+	}
+
+	.view-all-button {
+		@include font-md-regular-alt;
+		color: $color-primary-red-main;
+
+		border: none;
+
+		text-align: right;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	.card-wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		row-gap: 1.25em;
+		min-height: 100px;
+	}
+
+	.not-found-wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		row-gap: 1.25em;
+		height: 40vh;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			height: 160px;
+			width: auto;
+		}
+
+		span {
+			@include font-md-bold;
+			color: $color-mono-black;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.page-wrapper {
+	background-color: $color-mono-background;
+	position: relative;
+	max-width: inherit;
+	width: 100%;
+	margin: 0px auto;
+	height: fit-content;
+	// fixed
+	// top: $header-height;
+	padding-bottom: $navbar-height;
+
+	// sticky (none att)
+}

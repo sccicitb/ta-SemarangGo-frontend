@@ -1,0 +1,32 @@
+@import 'variables';
+
+.app {
+	max-width: $screen-max !important;
+	min-width: 260px;
+	min-height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	z-index: 11;
+}
+
+.wrapper {
+	background-color: $color-mono-grey;
+	position: relative;
+	max-width: inherit;
+	width: 100%;
+	margin: 0px auto;
+	min-height: calc(100vh - $header-height);
+	// fixed
+	// top: $header-height;
+	padding-bottom: $navbar-height;
+
+	// sticky (none att)
+}

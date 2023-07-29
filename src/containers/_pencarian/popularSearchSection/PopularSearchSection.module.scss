@@ -1,0 +1,31 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.popular-search-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 20px;
+
+	width: 100%;
+	min-height: 100px;
+
+	background: $color-mono-white;
+
+	h3 {
+		@include heading-3;
+		color: $color-mono-black;
+		text-align: left;
+		text-decoration: none;
+		display: inline-block;
+		margin: 0px 0px 20px;
+	}
+
+	.content-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 24px;
+	}
+}

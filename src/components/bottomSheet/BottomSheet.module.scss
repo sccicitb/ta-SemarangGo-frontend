@@ -1,0 +1,100 @@
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+.bottom-sheet {
+	background: $color-mono-white;
+	box-shadow: 0px 1px 8px rgb(0 0 0 / 30%);
+	border-radius: 8px;
+	margin: auto;
+	max-width: $screen-max;
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	padding-bottom: 16px;
+}
+
+.header-title {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+
+	h1 {
+		@include heading-1;
+		margin: 0;
+	}
+	h2 {
+		@include heading-2;
+		margin: 0;
+	}
+}
+
+.sheet-body {
+	overflow-y: auto;
+	width: 100%;
+	transition: height 200ms;
+}
+
+.close-button {
+	top: 0px;
+	height: 40px;
+	width: 40px;
+	background: $color-mono-white;
+	cursor: pointer;
+	border: none;
+	padding: 8px;
+	border-radius: 100%;
+	position: absolute;
+	right: 16px;
+	z-index: 16;
+
+	svg {
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		fill: $color-mono-darker-grey;
+		@media (hover: hover) {
+			&:hover {
+				fill: $color-mono-black;
+			}
+		}
+	}
+}
+
+.debug-log {
+	color: $color-mono-background;
+}
+
+.thumb-bar-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	cursor: move; /* fallback if grab cursor is unsupported */
+
+	.thumb-bar {
+		background: $color-mono-dark-grey;
+		border-radius: 32px;
+		width: 120px;
+		margin: 20px auto 4px auto;
+		height: 0.25rem;
+		border-radius: 4px;
+	}
+}
+
+.grabbable {
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.grabbing {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}

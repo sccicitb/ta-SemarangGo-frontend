@@ -1,0 +1,104 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+// .navBarWrapper {
+// 	list-style-type: none;
+// 	display: inline-block;
+// 	border-width: 1px 0px 0px;
+// 	border-right-style: initial;
+// 	border-bottom-style: initial;
+// 	border-left-style: initial;
+// 	border-right-color: initial;
+// 	border-bottom-color: initial;
+// 	border-left-color: initial;
+// 	border-image: initial;
+// 	vertical-align: middle;
+// 	transition: all 0.35s ease 0s;
+// 	width: 100%;
+// 	padding: 7px 0px;
+// 	max-width: 640px;
+// 	position: fixed;
+// 	bottom: 0px;
+// 	left: 50%;
+// 	transform: translate(-50%);
+// 	z-index: 2;
+// 	border-top-style: solid;
+// 	border-top-color: $color-mono-grey-alt;
+// 	margin: 0px;
+// 	background-color: $color-mono-white;
+// 	transition: all 0.35s ease 0s;
+// }
+
+.nav {
+	list-style-type: none;
+	display: inline-block;
+	border-width: 1px 0px 0px;
+	width: 100%;
+	max-width: inherit;
+	padding: 7px 0px;
+	margin: 0px;
+	vertical-align: middle;
+	background-color: $color-mono-white;
+	border-top-color: $color-mono-grey-alt;
+	border-top-style: solid;
+	z-index: 13;
+	transition: all 0.35s ease 0s;
+
+	// fixed
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0px;
+	padding-bottom: 12px;
+
+	// sticky
+	// position: -webkit-sticky;
+	// position: sticky;
+	// bottom: 0px;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		gap: 1rem;
+	}
+
+	a {
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
+		gap: 8px;
+	}
+}
+
+.nav-item {
+	display: inline-block;
+	width: 20%;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.nav-text {
+	@include font-sm-regular;
+	color: $color-mono-darker-grey;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.icon {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	fill: $color-mono-darker-grey;
+	transition: all 0.5s ease-out;
+}
+
+.active {
+	color: $color-primary-red-main;
+	fill: $color-primary-red-main;
+}

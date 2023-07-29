@@ -1,0 +1,144 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.filter-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 8px;
+
+	width: auto;
+	height: auto;
+	border-radius: 8px;
+	cursor: pointer;
+
+	@include font-md-bold;
+	background: $color-mono-white;
+	border: 1px solid $color-mono-dark-grey;
+	color: $color-mono-dark-grey;
+
+	&-active {
+		background: $color-primary-red-main;
+		color: $color-mono-white;
+		border: 1px solid $color-primary-red-main;
+	}
+}
+
+.search-category-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	padding-top: 0.625em;
+	background: $color-mono-white;
+
+	h3 {
+		@include heading-3;
+		color: $color-mono-black;
+		text-align: left;
+		text-decoration: none;
+		display: inline-block;
+		margin: 0px 0px 20px;
+	}
+
+	.filter-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		width: 100%;
+	}
+}
+
+.result-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20px;
+	width: 100%;
+	background: #fafafa;
+
+	.title-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 0px;
+		width: 100%;
+
+		margin-bottom: 20px;
+
+		.title {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px;
+			gap: 4px;
+
+			h3 {
+				@include heading-3;
+				text-align: left;
+				text-decoration: none;
+				display: inline-block;
+				margin: 0;
+			}
+
+			b {
+				@include font-sm-extra-bold;
+				color: $color-primary-red-main;
+			}
+
+			span {
+				@include font-sm-regular;
+				color: $color-mono-black;
+			}
+		}
+
+		.view-all-button {
+			@include font-md-regular-alt;
+			color: $color-primary-red-main;
+			border: none;
+
+			text-align: right;
+			text-decoration: none;
+			display: inline-block;
+			background: none;
+			cursor: pointer;
+		}
+	}
+
+	.service-content-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 20px;
+		width: 100%;
+	}
+
+	.news-content-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 40px;
+		width: 100%;
+	}
+
+	.agenda-content-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 20px;
+		width: 100%;
+	}
+
+	.indeks-content-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 20px;
+		width: 100%;
+	}
+}

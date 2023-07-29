@@ -1,0 +1,74 @@
+@import '../../styles/variables.scss';
+@import '../../styles/fonts.scss';
+
+.dialog-wrapper {
+	max-width: $screen-max;
+	width: 85%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 15;
+	display: flex;
+	flex-direction: column;
+	padding: 0.625em;
+	border: 1px solid $color-mono-dark-grey;
+	border-radius: 8px;
+	gap: 1.25em;
+	background: $color-mono-white;
+
+	.title {
+		@include heading-2;
+		color: $color-primary-red-main;
+		margin: 0;
+		text-align: center;
+		vertical-align: middle;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	.description {
+		@include font-md-regular;
+		color: $color-mono-black;
+		margin: 0;
+		text-align: center;
+		vertical-align: middle;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	.button-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0.625em;
+		width: 100%;
+
+		.confirm-button {
+			@include font-md-regular;
+			background: $color-primary-red-main;
+			color: $color-mono-white;
+			border-radius: 8px;
+			border: none;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			cursor: pointer;
+			padding: 0.5em 4em;
+		}
+
+		.cancel-button {
+			@include font-md-regular;
+			background: $color-mono-white;
+			color: $color-mono-black;
+			border-radius: 8px;
+			border: none;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			cursor: pointer;
+			padding: 0.5em 4em;
+		}
+	}
+}

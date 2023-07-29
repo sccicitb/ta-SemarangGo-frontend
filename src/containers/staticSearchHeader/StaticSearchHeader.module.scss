@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.header-wrapper {
+	max-width: inherit;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	margin: 0px auto;
+	padding: 20px;
+	height: $header-height;
+
+	background: $color-mono-white;
+
+	width: 100%;
+	z-index: 11;
+	margin: 0px;
+	top: 0px;
+
+	// fixed
+	// position: fixed;
+	// left: 50%;
+	// transform: translate(-50%);
+
+	// sticky
+	position: -webkit-sticky;
+	position: sticky;
+
+	.logo {
+		width: auto;
+		height: 32px;
+		margin-right: 20px;
+	}
+
+	.icon {
+		font-size: 32px;
+		color: $color-primary-red-main;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+
+	.search-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100%;
+		align-content: center;
+		cursor: text;
+	}
+}

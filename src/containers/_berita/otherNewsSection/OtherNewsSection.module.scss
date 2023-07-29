@@ -1,0 +1,42 @@
+@import '../../../styles/variables';
+@import '../../../styles/fonts';
+
+.other-news-section {
+	display: flex;
+	flex-direction: column;
+	padding: 1.25em;
+
+	width: 100%;
+	min-height: 100px;
+
+	background: $color-mono-white;
+
+	.title {
+		display: flex;
+		align-items: center;
+		padding: 0;
+
+		margin-bottom: 1.25em;
+
+		h3 {
+			@include heading-3;
+			text-align: left;
+			text-decoration: none;
+			display: inline-block;
+			margin: 0;
+		}
+	}
+
+	.content-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 40px;
+	}
+
+	.pagination {
+		margin-top: 1.25em;
+		margin-bottom: 0;
+	}
+}

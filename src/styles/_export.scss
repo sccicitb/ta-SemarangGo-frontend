@@ -1,0 +1,22 @@
+@import './variables';
+
+:export {
+	colorPrimaryRedMain: $color-primary-red-main;
+	colorPrimaryYellowMain: $color-primary-yellow-main;
+	colorPrimaryRedAlt: $color-primary-red-alt;
+	colorPrimaryLightRed: $color-primary-light-red;
+	colorPrimaryGreen: $color-primary-green;
+	colorPrimaryGreenAlt: $color-primary-green-alt;
+	colorMonoBlack: $color-mono-black;
+	colorMonoDarkerGrey: $color-mono-darker-grey;
+	colorMonoDarkGrey: $color-mono-dark-grey;
+	colorMonoLightGrey: $color-mono-light-grey;
+	colorMonoWhite: $color-mono-white;
+	colorMonoBackground: $color-mono-background;
+	colorMonoGrey: $color-mono-grey;
+	colorMonoGreyAlt: $color-mono-grey-alt;
+
+	maxScreenWidth: $screen-max;
+
+	fontFamily: $font-family;
+}

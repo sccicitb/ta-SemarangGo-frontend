@@ -1,0 +1,86 @@
+@import './variables';
+@import './mixins';
+
+$font-family: var(--raleway-font), sans-serif;
+$font-family-alt: var(--montserrat-font), sans-serif;
+
+/* FONT
+Naming:
+- font
+- {size} 	: xs | sm | md | lg
+	- xs	: 10px
+	- sm	: 12px
+	- md	: 14px
+	- lg	: 16px
+	- xl	: 18px
+	- 2xl	: 20px
+- {style}	: regular | italic | medium | bold | extra bold
+	- regular		: 400
+	- medium		: 500
+	- bold			: 600
+	- extra bold: 700
+============================================= */
+@mixin heading-1 {
+	@include font($font-family, normal, 600, 32px, 120%);
+}
+
+@mixin heading-2 {
+	@include font($font-family, normal, 600, 24px, 120%);
+}
+
+@mixin heading-3 {
+	@include font($font-family, normal, 600, 16px, 120%);
+}
+
+@mixin navbar-title {
+	@include font($font-family, normal, 600, 20px, 130%);
+}
+
+@mixin font-2xl-medium {
+	@include font($font-family, normal, 500, 20px, 120%);
+}
+
+@mixin font-md-regular {
+	@include font($font-family, normal, 400, 14px, 130%);
+}
+
+@mixin font-md-bold {
+	@include font($font-family, normal, 600, 14px, 130%);
+}
+
+@mixin font-md-italic {
+	@include font($font-family, italic, 400, 14px, 130%);
+}
+
+@mixin font-md-extra-bold {
+	@include font($font-family, normal, 700, 14px, 130%);
+}
+
+@mixin font-sm-regular {
+	@include font($font-family, normal, 400, 12px, 130%);
+}
+
+@mixin font-sm-bold {
+	@include font($font-family, normal, 600, 12px, 130%);
+}
+
+@mixin font-sm-italic {
+	@include font($font-family, italic, 400, 12px, 130%);
+}
+
+@mixin font-sm-extra-bold {
+	@include font($font-family, normal, 700, 12px, 130%);
+}
+
+@mixin font-xs-regular {
+	@include font($font-family, normal, 400, 10px, 120%);
+}
+
+@mixin font-md-regular-alt {
+	@include font($font-family-alt, normal, 400, 14px, 120%);
+	letter-spacing: -0.006em;
+}
+
+@mixin font-sm-regular-alt {
+	@include font($font-family-alt, normal, 400, 12px, 120%);
+}
